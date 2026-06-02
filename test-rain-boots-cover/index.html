@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -8,6 +8,23 @@
   <meta property="og:title" content="テスト レインブーツカバー">
   <meta property="og:description" content="靴の上からさっと装着できる、雨の日用の防水ブーツカバーです。通勤、旅行、急な雨対策に使いやすく、折りたたんでバッグに入れておけます。">
   <meta property="og:type" content="website">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8CYTK012N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8CYTK012N');
+
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest('[data-ga-event="product_click"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'product_click', {
+        product_name: link.getAttribute('data-product-name') || '',
+        link_url: link.href,
+        link_text: (link.textContent || '').trim()
+      });
+    });
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -259,7 +276,7 @@
         <p class="catch-copy">雨の日の足元をすっきり守る防水カバー</p>
         <p>靴の上からさっと装着できる、雨の日用の防水ブーツカバーです。通勤、旅行、急な雨対策に使いやすく、折りたたんでバッグに入れておけます。</p>
         <p class="price">2,980円（税込）</p>
-        <a class="purchase-button" href="https://example.com/products/rain-boots-cover" target="_blank" rel="noopener noreferrer">購入はこちら</a>
+        <a class="purchase-button" data-ga-event="product_click" data-product-name="テスト レインブーツカバー" href="https://example.com/products/rain-boots-cover" target="_blank" rel="noopener noreferrer">購入はこちら</a>
       </section>
     </main>
   </div>
@@ -323,7 +340,7 @@
     <div class="section-inner">
       <h2 id="buy-title">購入導線</h2>
       <p>最新の価格、在庫、配送条件は販売ページでご確認ください。</p>
-      <a class="purchase-button" href="https://example.com/products/rain-boots-cover" target="_blank" rel="noopener noreferrer">購入はこちら</a>
+      <a class="purchase-button" data-ga-event="product_click" data-product-name="テスト レインブーツカバー" href="https://example.com/products/rain-boots-cover" target="_blank" rel="noopener noreferrer">購入はこちら</a>
     </div>
   </section>
 
