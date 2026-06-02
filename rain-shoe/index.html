@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -8,6 +8,23 @@
   <meta property="og:title" content="防水レインシューズカバー黒M">
   <meta property="og:description" content="防水レインシューズカバーです。普段履いているスニーカーやローファー、ビジネスシューズの上からそのまま装着でき、急な雨やゲリラ豪雨、通勤・通学時にも役立ちます。黒ブラックカラーに赤いストライプが入ったシンプルなデザインで、男女問わず使いやすい仕様です。">
   <meta property="og:type" content="website">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8CYTK012N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y8CYTK012N');
+
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest('[data-ga-event="product_click"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'product_click', {
+        product_name: link.getAttribute('data-product-name') || '',
+        link_url: link.href,
+        link_text: (link.textContent || '').trim()
+      });
+    });
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -262,7 +279,7 @@
         <p class="catch-copy">雨の日や雪の日に靴を守りたい方に便利</p>
         <p>防水レインシューズカバーです。普段履いているスニーカーやローファー、ビジネスシューズの上からそのまま装着でき、急な雨やゲリラ豪雨、通勤・通学時にも役立ちます。黒ブラックカラーに赤いストライプが入ったシンプルなデザインで、男女問わず使いやすい仕様です。</p>
         <p class="price">¥850</p>
-        <a class="purchase-button" href="https://jp.mercari.com/item/m58165634042" target="_blank" rel="noopener noreferrer">販売ページを見る</a>
+        <a class="purchase-button" data-ga-event="product_click" data-product-name="防水レインシューズカバー黒M" href="https://jp.mercari.com/item/m58165634042" target="_blank" rel="noopener noreferrer">販売ページを見る</a>
       </section>
     </main>
   </div>
@@ -315,7 +332,7 @@
     <div class="section-inner">
       <h2 id="buy-title">ご購入はこちら</h2>
       <p>最新の価格、在庫、配送条件は販売ページでご確認ください。</p>
-      <a class="purchase-button" href="https://jp.mercari.com/item/m58165634042" target="_blank" rel="noopener noreferrer">販売ページを見る</a>
+      <a class="purchase-button" data-ga-event="product_click" data-product-name="防水レインシューズカバー黒M" href="https://jp.mercari.com/item/m58165634042" target="_blank" rel="noopener noreferrer">販売ページを見る</a>
     </div>
   </section>
 
