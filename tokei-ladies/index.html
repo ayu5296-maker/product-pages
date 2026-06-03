@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -10,6 +10,23 @@
   <meta property="og:description" content="シンプルで上品なデザインのレディース腕時計です。
 落ち着いたカラーと高級感のある文字盤で、普段使いからお出かけまで幅広くお使いいただけます。">
   <meta property="og:type" content="website">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5E7ZHBOYEH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5E7ZHBOYEH');
+
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest('[data-ga-event="product_click"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'product_click', {
+        product_name: link.getAttribute('data-product-name') || '',
+        link_url: link.href,
+        link_text: (link.textContent || '').trim()
+      });
+    });
+  </script>
   <style>
     :root {
       color-scheme: light;
