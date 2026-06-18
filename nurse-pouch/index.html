@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ナースポーチ</title>
+  <meta name="description" content="看護師、介護士、保育士、美容師など、
+手にバッグを持てないお仕事の方に大好評！
+必要なアイテムをすぐ取り出せる、
+働く人を徹底サポートする多機能ナースポーチです。
+ウエストポーチ、
+ショルダー、
+斜め掛けの3WAY仕様で、
+現場の動きに合わせてスタイルを自由にチェンジ。
+軽量、
+撥水素材を採用し、
+ハードな現場でも安心して使える設計です。">
+  <meta property="og:title" content="ナースポーチ">
+  <meta property="og:description" content="看護師、介護士、保育士、美容師など、
+手にバッグを持てないお仕事の方に大好評！
+必要なアイテムをすぐ取り出せる、
+働く人を徹底サポートする多機能ナースポーチです。
+ウエストポーチ、
+ショルダー、
+斜め掛けの3WAY仕様で、
+現場の動きに合わせてスタイルを自由にチェンジ。
+軽量、
+撥水素材を採用し、
+ハードな現場でも安心して使える設計です。">
+  <meta property="og:type" content="website">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRFQBZ5VWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LRFQBZ5VWZ');
+
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest('[data-ga-event="product_click"]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'product_click', {
+        product_name: link.getAttribute('data-product-name') || '',
+        link_url: link.href,
+        link_text: (link.textContent || '').trim()
+      });
+    });
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --paper: #fffdf9;
+      --text: #1f2933;
+      --muted: #667085;
+      --line: #eadfce;
+      --accent: #d71920;
+      --accent-dark: #a70f16;
+      --gold: #b88728;
+      --soft: #fff7e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; }
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      padding: 20px 16px 34px;
+      background: linear-gradient(180deg, #fffaf0 0%, #fff 76%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-media {
+      display: grid;
+      gap: 10px;
+    }
+
+    .main-image,
+    .image-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 18px 42px rgba(31, 41, 51, 0.08);
+    }
+
+    .image-placeholder {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .thumb-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .thumb-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .image-text-html {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .image-text-html img {
+      height: auto;
+      margin: 0 auto 10px;
+    }
+
+    .image-text-html a {
+      color: var(--accent);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .badge {
+      display: inline-flex;
+      width: fit-content;
+      border: 1px solid #f0c36b;
+      border-radius: 999px;
+      padding: 7px 12px;
+      background: #fff7df;
+      color: #8a5a00;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(1.85rem, 7vw, 3.75rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .catch-copy {
+      margin-bottom: 18px;
+      color: #4b5563;
+      font-size: clamp(1.03rem, 3.7vw, 1.35rem);
+      font-weight: 750;
+      line-height: 1.5;
+    }
+
+    .price {
+      margin: 18px 0;
+      color: var(--accent);
+      font-size: clamp(1.6rem, 6vw, 2.45rem);
+      font-weight: 950;
+    }
+
+    .purchase-button {
+      display: inline-flex;
+      min-height: 62px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 8px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+      color: white;
+      font-size: 1.14rem;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 14px 30px rgba(215, 25, 32, 0.28);
+    }
+
+    .purchase-button.disabled {
+      background: #98a2b3;
+      box-shadow: none;
+    }
+
+    .section {
+      padding: 42px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-inner {
+      width: min(1400px, 100%);
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: clamp(1.45rem, 5vw, 2.15rem);
+      line-height: 1.2;
+    }
+
+    .feature-grid,
+    .scene-grid,
+    .detail-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .feature-card,
+    .scene-card,
+    .detail-box,
+    .caution-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 22px;
+    }
+
+    .feature-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      gap: 18px;
+    }
+
+    .feature-icon {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 900;
+    }
+
+    .feature-card p,
+    .scene-card p,
+    .detail-box p {
+      margin: 0;
+      color: #344054;
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+
+    .soft { background: var(--soft); }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2em;
+      color: #344054;
+      line-height: 1.8;
+    }
+
+    .buy-band {
+      padding: 42px 18px;
+      background: #b70f18;
+      color: white;
+      text-align: center;
+    }
+
+    .buy-band p { color: #ffe6e8; }
+    .buy-band .purchase-button { background: #fff; color: #b70f18; box-shadow: none; }
+
+    footer {
+      padding: 26px 16px;
+      background: #1f2933;
+      color: #eef2f6;
+      text-align: center;
+    }
+
+    footer p { margin: 0; color: #cbd5e1; }
+
+    @media (min-width: 760px) {
+      .hero {
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        align-items: center;
+        width: min(1400px, calc(100% - 56px));
+        margin: 0 auto;
+        padding: 42px 0 48px;
+        border-bottom: 0;
+      }
+
+      .hero-wrap { border-bottom: 1px solid var(--line); background: linear-gradient(180deg, #fffaf0 0%, #fff 76%); }
+      .feature-grid { grid-template-columns: repeat(3, 1fr); }
+      .scene-grid, .detail-grid { grid-template-columns: repeat(2, 1fr); }
+      .section { padding: 58px 28px; }
+      .purchase-button { width: auto; min-width: 320px; padding: 0 46px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <main class="hero">
+      <section class="hero-media" aria-label="商品画像">
+        <img class="main-image" src="https://item-shopping.c.yimg.jp/i/n/deruderu_de0095_i_20251211160550" alt="ナースポーチ" loading="eager">
+          <div class="thumb-grid">
+            <img src="https://item-shopping.c.yimg.jp/i/n/deruderu_de0095_1_d_20251211160557" alt="ナースポーチ 2" loading="lazy">
+            <img src="https://item-shopping.c.yimg.jp/i/n/deruderu_de0095_2_d_20251211160619" alt="ナースポーチ 3" loading="lazy">
+            <img src="https://item-shopping.c.yimg.jp/i/n/deruderu_de0095_3_d_20251211160626" alt="ナースポーチ 4" loading="lazy">
+          </div>
+        <div class="image-text-html"><a href="https://hb.afl.rakuten.co.jp/ichiba/54fa8a1c.f1c96b88.54fa8a1d.4e61c5db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fderuderu%2Fde0095%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/54fa8a1c.f1c96b88.54fa8a1d.4e61c5db/?me_id=1392779&item_id=10000103&pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fderuderu%2Fcabinet%2Fcompass1765437574.jpg%3F_ex%3D300x300&s=300x300&t=pict" border="0" style="margin:2px" alt="" title=""></a></div>
+      </section>
+      <section class="hero-copy">
+        <span class="badge">バッグ・小物・ブランド雑貨</span>
+        <h1>ナースポーチ</h1>
+        <p class="catch-copy">現場の声から生まれた3WAYナースポーチ！</p>
+        <p>看護師、介護士、保育士、美容師など、
+手にバッグを持てないお仕事の方に大好評！
+必要なアイテムをすぐ取り出せる、
+働く人を徹底サポートする多機能ナースポーチです。
+ウエストポーチ、
+ショルダー、
+斜め掛けの3WAY仕様で、
+現場の動きに合わせてスタイルを自由にチェンジ。
+軽量、
+撥水素材を採用し、
+ハードな現場でも安心して使える設計です。</p>
+        <p class="price">¥780</p>
+        <a class="purchase-button" href="https://a.r10.to/hPazGp" target="_blank" rel="noopener noreferrer" data-ga-event="product_click" data-product-name="ナースポーチ">販売ページを見る</a>
+      </section>
+    </main>
+  </div>
+
+  <section class="section" aria-labelledby="features-title">
+    <div class="section-inner">
+      <h2 id="features-title">商品の特徴</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">1</span>
+          <p>・小ぶりなのにしっかり収納できる9ポケットで、</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">2</span>
+          <p>たくさんの小物を倒れず整理できるマルチポケット構造。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">3</span>
+          <p>・細かく仕切られたオープンポケットと、</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">4</span>
+          <p>ファスナーポケットにより探す時間を大幅カット。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">5</span>
+          <p>・高密度オックスフォードクロスを使用し、</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">6</span>
+          <p>水に強く、</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" aria-labelledby="scene-title">
+    <div class="section-inner">
+      <h2 id="scene-title">使用イメージ</h2>
+      <div class="scene-grid">
+        <article class="scene-card"><p>・看護師、介護士、保育士、美容師、飲食店のスタッフなど仕事用として。</p></article>
+        <article class="scene-card"><p>・ガーデニング、DIY、日曜大工、軽作業、倉庫作業のツールポーチとして。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="detail-title">
+    <div class="section-inner">
+      <h2 id="detail-title">商品詳細</h2>
+      <div class="detail-grid">
+        <article class="detail-box">
+          <h3>説明文</h3>
+          <p>看護師、介護士、保育士、美容師など、
+手にバッグを持てないお仕事の方に大好評！
+必要なアイテムをすぐ取り出せる、
+働く人を徹底サポートする多機能ナースポーチです。
+ウエストポーチ、
+ショルダー、
+斜め掛けの3WAY仕様で、
+現場の動きに合わせてスタイルを自由にチェンジ。
+軽量、
+撥水素材を採用し、
+ハードな現場でも安心して使える設計です。</p>
+        </article>
+        <article class="detail-box">
+          <h3>仕様・サイズ・カラー</h3>
+          <ul>
+            <li>【サイズ】</li>
+          <li>約25cm × 18cm</li>
+          <li>ベルト長さ：約110cm（調整可）</li>
+          <li>【重量】</li>
+          <li>軽量設計</li>
+          <li>【素材】</li>
+          <li>高密度オックスフォードクロス（ナイロン）</li>
+          <li>【カラー】</li>
+          <li>ブラック、ネイビー、ピンク、ワイン</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="buy-band" aria-labelledby="buy-title">
+    <div class="section-inner">
+      <h2 id="buy-title">ご購入はこちら</h2>
+      <p>最新の価格、在庫、配送条件は販売ページでご確認ください。</p>
+      <a class="purchase-button" href="https://a.r10.to/hPazGp" target="_blank" rel="noopener noreferrer" data-ga-event="product_click" data-product-name="ナースポーチ">販売ページを見る</a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="caution-title">
+    <div class="section-inner">
+      <h2 id="caution-title">注意事項</h2>
+      <div class="caution-box">
+        <ul>
+          <li>開封時に素材特有のにおいを感じる場合がありますが、</li>
+          <li>風通しの良い場所で1週間程度陰干しすると軽減します。</li>
+          <li>商品ごとにサイズに多少の誤差が出る場合があります。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>デルデルSHOP</p>
+    <p>&copy; 2026 デルデルSHOP. All rights reserved.</p>
+  </footer>
+  <script type="application/json" id="product-page-data">{"pageSlug":"nurse-pouch","productName":"ナースポーチ","catchCopy":"現場の声から生まれた3WAYナースポーチ！","description":"看護師、介護士、保育士、美容師など、\n手にバッグを持てないお仕事の方に大好評！\n必要なアイテムをすぐ取り出せる、\n働く人を徹底サポートする多機能ナースポーチです。\nウエストポーチ、\nショルダー、\n斜め掛けの3WAY仕様で、\n現場の動きに合わせてスタイルを自由にチェンジ。\n軽量、\n撥水素材を採用し、\nハードな現場でも安心して使える設計です。","imageUrls":"https://item-shopping.c.yimg.jp/i/n/deruderu_de0095_i_20251211160550\nhttps://item-shopping.c.yimg.jp/i/n/deruderu_de0095_1_d_20251211160557\nhttps://item-shopping.c.yimg.jp/i/n/deruderu_de0095_2_d_20251211160619\nhttps://item-shopping.c.yimg.jp/i/n/deruderu_de0095_3_d_20251211160626","normalProductUrl":"https://a.r10.to/hPazGp","affiliateUrl":"https://a.r10.to/hPazGp","purchaseUrl":"https://a.r10.to/hPazGp","imageTextHtml":"\u003ca href=\"https://hb.afl.rakuten.co.jp/ichiba/54fa8a1c.f1c96b88.54fa8a1d.4e61c5db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fderuderu%2Fde0095%2F\u0026link_type=pict\u0026ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\"\u003e\u003cimg src=\"https://hbb.afl.rakuten.co.jp/hgb/54fa8a1c.f1c96b88.54fa8a1d.4e61c5db/?me_id=1392779\u0026item_id=10000103\u0026pc=https%3A%2F%2Fimage.rakuten.co.jp%2Fderuderu%2Fcabinet%2Fcompass1765437574.jpg%3F_ex%3D300x300\u0026s=300x300\u0026t=pict\" border=\"0\" style=\"margin:2px\" alt=\"\" title=\"\"\u003e\u003c/a\u003e","price":"780","category":"バッグ・小物・ブランド雑貨","shopInfo":"デルデルSHOP","features":"・小ぶりなのにしっかり収納できる9ポケットで、\nたくさんの小物を倒れず整理できるマルチポケット構造。\n・細かく仕切られたオープンポケットと、\nファスナーポケットにより探す時間を大幅カット。\n・高密度オックスフォードクロスを使用し、\n水に強く、\n汚れにくく、\n丈夫で長持ち。\n・3WAY仕様で、\nベルトは長さ調整可能で男女問わず快適にフィット。","scenes":"・看護師、介護士、保育士、美容師、飲食店のスタッフなど仕事用として。\n・ガーデニング、DIY、日曜大工、軽作業、倉庫作業のツールポーチとして。\n・釣り、キャンプなどのアウトドア、アクティブなシーンに。","specs":"【サイズ】\n約25cm × 18cm\nベルト長さ：約110cm（調整可）\n【重量】\n軽量設計\n【素材】\n高密度オックスフォードクロス（ナイロン）\n【カラー】\nブラック、ネイビー、ピンク、ワイン","cautions":"開封時に素材特有のにおいを感じる場合がありますが、\n風通しの良い場所で1週間程度陰干しすると軽減します。\n商品ごとにサイズに多少の誤差が出る場合があります。"}</script>
+</body>
+</html>
